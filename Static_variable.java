@@ -41,3 +41,49 @@ d3.a : 89
 d1.b : 79
 d2.b : 79
 d3.b : 79
+
+
+
+	------------------------------------
+	/*static variable: In Java, static members 
+(variables and methods) can only be accessed 
+using the class name, not through object instances.
+*/
+
+class Demo
+{
+	int a ;
+	static int b;
+
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Demo d1=new Demo();
+		Demo d2=new Demo();
+		Demo d3=new Demo();
+		d1.a=30;
+		d2.a=56;
+		d3.a=89;
+
+		System.out.println("d1.a : "+d1.a);
+		System.out.println("d2.a : "+d2.a);
+		System.out.println("d3.a : "+d3.a);
+
+		System.out.println();
+		Demo.b=80;
+	
+	
+
+		System.out.println("b : "+Demo.b);
+		
+	}
+}
+
+//output
+
+d1.a : 30
+d2.a : 56
+d3.a : 89
+
+b : 80
