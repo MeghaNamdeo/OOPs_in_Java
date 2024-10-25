@@ -87,3 +87,45 @@ d2.a : 56
 d3.a : 89
 
 b : 80
+
+	=======================
+	class Employee {
+    private int age;
+    private String name;
+    private static String company = "Amazon"; // All employees belong to Amazon
+
+    // Constructor
+    public Employee(int age, String name) {
+        this.age = age; // Use 'this' to refer to instance variables
+        this.name = name;
+    }
+
+    public void display() {
+        System.out.println("Age: " + age);
+        System.out.println("Name: " + name);
+        System.out.println("Company: " + company);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee e = new Employee(25, "Megha");
+        Employee e1 = new Employee(22, "Bhavesh");
+        Employee e2 = new Employee(23, "Pratibha");
+
+        e.display();    
+        e1.display();
+        e2.display();  
+    }
+}
+//ouput
+Age: 22
+Name: Megha
+Company: Amazon
+Age: 20
+Name: Ram
+Company: Amazon
+Age: 19
+Name: Pratibha
+Company: Amazon
+
